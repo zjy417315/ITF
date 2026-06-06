@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "num_samples": 16,
+  "accepts": 12,
+  "rejects": 4,
+  "accuracy": 1.0,
+  "threshold": 0.985,
+  "min_accept_score": 0.999989,
+  "max_reject_score": 0.744355
+}

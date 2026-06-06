@@ -1,0 +1,369 @@
+{
+  "config": {
+    "meta_path": "<artifact-local-path-redacted>",
+    "stage_cache_dir": "<artifact-local-path-redacted>",
+    "checkpoint_path": "<artifact-local-path-redacted>",
+    "protocol_versions": [
+      3,
+      4
+    ],
+    "num_raws": 32,
+    "seed": 42,
+    "source": "live_isp",
+    "crop_size": 512,
+    "feature_source": "layer4",
+    "scalarization": "l2",
+    "normalization": "zscore",
+    "topology_distance_mode": "l1",
+    "topology_normalize_vectors": false,
+    "h0_weight": 1.0,
+    "h1_weight": 1.0,
+    "pixel_size": 0.25,
+    "birth_min": -3.0,
+    "birth_max": 3.0,
+    "pers_min": 0.0,
+    "pers_max": 6.0,
+    "kernel_sigma": 0.35,
+    "stage_weights": [
+      0.5,
+      0.5,
+      0.75,
+      2.0,
+      1.25
+    ]
+  },
+  "normalization_stats": {
+    "itf": {
+      "anchor_mean": 0.003637029203673592,
+      "isp_mean": 0.008150855919666355,
+      "cross_mean": 0.16406178940087557
+    },
+    "topology": {
+      "anchor_mean": 1.3204077319528551e-05,
+      "isp_mean": 3.181755791104024e-05,
+      "cross_mean": 0.0005679123464688018
+    }
+  },
+  "baselines": {
+    "itf": {
+      "3": {
+        "same_source_anchor_equivalence_v1_v2": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.003637029203673592,
+            "std": 0.0014857747192579128,
+            "min": 0.0014829759020358324,
+            "max": 0.009470769204199314
+          }
+        },
+        "same_source_isp_sensitivity_v1_vx": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.00766499090968864,
+            "std": 0.008834519039612503,
+            "min": 0.0016456980956718326,
+            "max": 0.04377731308341026
+          }
+        },
+        "cross_source_separation_v1_v1": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.16406178940087557,
+            "std": 0.0651101125816636,
+            "min": 0.040791697800159454,
+            "max": 0.318217933177948
+          }
+        },
+        "ordering_checks": {
+          "ordered_triplet_accuracy": 0.84375
+        },
+        "derived_scores": {
+          "cross_over_isp_ratio": 21.404042266181882,
+          "cross_over_anchor_ratio": 45.108735787759
+        }
+      },
+      "4": {
+        "same_source_anchor_equivalence_v1_v2": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.003637029203673592,
+            "std": 0.0014857747192579128,
+            "min": 0.0014829759020358324,
+            "max": 0.009470769204199314
+          }
+        },
+        "same_source_isp_sensitivity_v1_vx": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.00863672092964407,
+            "std": 0.005928956390266238,
+            "min": 0.0021937419660389423,
+            "max": 0.0333402082324028
+          }
+        },
+        "cross_source_separation_v1_v1": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.16406178940087557,
+            "std": 0.0651101125816636,
+            "min": 0.040791697800159454,
+            "max": 0.318217933177948
+          }
+        },
+        "ordering_checks": {
+          "ordered_triplet_accuracy": 0.96875
+        },
+        "derived_scores": {
+          "cross_over_isp_ratio": 18.995842373204567,
+          "cross_over_anchor_ratio": 45.108735787759
+        }
+      }
+    },
+    "topology": {
+      "3": {
+        "same_source_anchor_equivalence_v1_v2": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 1.3204077319528551e-05,
+            "std": 8.814225976518575e-06,
+            "min": 5.16710861120373e-06,
+            "max": 4.537143468041904e-05
+          }
+        },
+        "same_source_isp_sensitivity_v1_vx": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 2.9568058124596064e-05,
+            "std": 3.4460086882500054e-05,
+            "min": 6.0283864513621666e-06,
+            "max": 0.0001832310517784208
+          }
+        },
+        "cross_source_separation_v1_v1": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.0005679123464688018,
+            "std": 0.00031089149826125717,
+            "min": 0.00010985661356244236,
+            "max": 0.0011288970708847046
+          }
+        },
+        "ordering_checks": {
+          "ordered_triplet_accuracy": 0.875
+        },
+        "derived_scores": {
+          "cross_over_isp_ratio": 19.206954480260116,
+          "cross_over_anchor_ratio": 43.010377228621
+        }
+      },
+      "4": {
+        "same_source_anchor_equivalence_v1_v2": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 1.3204077319528551e-05,
+            "std": 8.814225976518575e-06,
+            "min": 5.16710861120373e-06,
+            "max": 4.537143468041904e-05
+          }
+        },
+        "same_source_isp_sensitivity_v1_vx": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 3.4067057697484415e-05,
+            "std": 3.6174101113693024e-05,
+            "min": 6.205992576724384e-06,
+            "max": 0.00020696519641205668
+          }
+        },
+        "cross_source_separation_v1_v1": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.0005679123464688018,
+            "std": 0.00031089149826125717,
+            "min": 0.00010985661356244236,
+            "max": 0.0011288970708847046
+          }
+        },
+        "ordering_checks": {
+          "ordered_triplet_accuracy": 0.9375
+        },
+        "derived_scores": {
+          "cross_over_isp_ratio": 16.670425474130035,
+          "cross_over_anchor_ratio": 43.010377228621
+        }
+      }
+    }
+  },
+  "best_candidate": {
+    "normalization_mode": "margin",
+    "fusion_mode": "product",
+    "alpha": 0.45,
+    "protocol_results": {
+      "3": {
+        "same_source_anchor_equivalence_v1_v2": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.022498979982510787,
+            "std": 0.010118066657838475,
+            "min": 0.010282337714935315,
+            "max": 0.062355478934979336
+          }
+        },
+        "same_source_isp_sensitivity_v1_vx": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.0495028076570905,
+            "std": 0.056292330805515677,
+            "min": 0.013003093702271287,
+            "max": 0.26538295377923093
+          }
+        },
+        "cross_source_separation_v1_v1": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 1.0068899874576525,
+            "std": 0.44763307484104853,
+            "min": 0.22722594371503288,
+            "max": 1.9182065341837435
+          }
+        },
+        "ordering_checks": {
+          "ordered_triplet_accuracy": 0.90625
+        },
+        "derived_scores": {
+          "cross_over_isp_ratio": 20.340058172709142,
+          "cross_over_anchor_ratio": 44.75269493285215
+        }
+      },
+      "4": {
+        "same_source_anchor_equivalence_v1_v2": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.022498979982510787,
+            "std": 0.010118066657838475,
+            "min": 0.010282337714935315,
+            "max": 0.062355478934979336
+          }
+        },
+        "same_source_isp_sensitivity_v1_vx": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 0.055467776417248225,
+            "std": 0.04523052766202234,
+            "min": 0.012493633298210249,
+            "max": 0.27043195391524405
+          }
+        },
+        "cross_source_separation_v1_v1": {
+          "sequence_distance": {
+            "count": 32,
+            "mean": 1.0068899874576525,
+            "std": 0.44763307484104853,
+            "min": 0.22722594371503288,
+            "max": 1.9182065341837435
+          }
+        },
+        "ordering_checks": {
+          "ordered_triplet_accuracy": 1.0
+        },
+        "derived_scores": {
+          "cross_over_isp_ratio": 18.152701487138586,
+          "cross_over_anchor_ratio": 44.75269493285215
+        }
+      }
+    },
+    "score_tuple": [
+      0.953125,
+      0.90625,
+      1.0,
+      19.246379829923864
+    ]
+  },
+  "top_candidates": [
+    {
+      "normalization_mode": "margin",
+      "fusion_mode": "product",
+      "alpha": 0.45,
+      "protocol_results": {
+        "3": {
+          "same_source_anchor_equivalence_v1_v2": {
+            "sequence_distance": {
+              "count": 32,
+              "mean": 0.022498979982510787,
+              "std": 0.010118066657838475,
+              "min": 0.010282337714935315,
+              "max": 0.062355478934979336
+            }
+          },
+          "same_source_isp_sensitivity_v1_vx": {
+            "sequence_distance": {
+              "count": 32,
+              "mean": 0.0495028076570905,
+              "std": 0.056292330805515677,
+              "min": 0.013003093702271287,
+              "max": 0.26538295377923093
+            }
+          },
+          "cross_source_separation_v1_v1": {
+            "sequence_distance": {
+              "count": 32,
+              "mean": 1.0068899874576525,
+              "std": 0.44763307484104853,
+              "min": 0.22722594371503288,
+              "max": 1.9182065341837435
+            }
+          },
+          "ordering_checks": {
+            "ordered_triplet_accuracy": 0.90625
+          },
+          "derived_scores": {
+            "cross_over_isp_ratio": 20.340058172709142,
+            "cross_over_anchor_ratio": 44.75269493285215
+          }
+        },
+        "4": {
+          "same_source_anchor_equivalence_v1_v2": {
+            "sequence_distance": {
+              "count": 32,
+              "mean": 0.022498979982510787,
+              "std": 0.010118066657838475,
+              "min": 0.010282337714935315,
+              "max": 0.062355478934979336
+            }
+          },
+          "same_source_isp_sensitivity_v1_vx": {
+            "sequence_distance": {
+              "count": 32,
+              "mean": 0.055467776417248225,
+              "std": 0.04523052766202234,
+              "min": 0.012493633298210249,
+              "max": 0.27043195391524405
+            }
+          },
+          "cross_source_separation_v1_v1": {
+            "sequence_distance": {
+              "count": 32,
+              "mean": 1.0068899874576525,
+              "std": 0.44763307484104853,
+              "min": 0.22722594371503288,
+              "max": 1.9182065341837435
+            }
+          },
+          "ordering_checks": {
+            "ordered_triplet_accuracy": 1.0
+          },
+          "derived_scores": {
+            "cross_over_isp_ratio": 18.152701487138586,
+            "cross_over_anchor_ratio": 44.75269493285215
+          }
+        }
+      },
+      "score_tuple": [
+        0.953125,
+        0.90625,
+        1.0,
+        19.246379829923864
+      ]
+    }
+  ]
+}

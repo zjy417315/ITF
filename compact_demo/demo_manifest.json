@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic compact enrollment-verification demo.",
+  "num_samples": 16,
+  "score_name": "r(I,c_s)",
+  "records": [
+    {
+      "sample_id": "demo_00",
+      "source_id": "S00",
+      "reference_image": "reference/S00_ref.png",
+      "candidate_image": "candidate/S00_candidate.png",
+      "claim_source_id": "S00",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_01",
+      "source_id": "S01",
+      "reference_image": "reference/S01_ref.png",
+      "candidate_image": "candidate/S01_candidate.png",
+      "claim_source_id": "S01",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_02",
+      "source_id": "S02",
+      "reference_image": "reference/S02_ref.png",
+      "candidate_image": "candidate/S02_candidate.png",
+      "claim_source_id": "S02",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_03",
+      "source_id": "S03",
+      "reference_image": "reference/S03_ref.png",
+      "candidate_image": "candidate/S03_candidate.png",
+      "claim_source_id": "S03",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_04",
+      "source_id": "S04",
+      "reference_image": "reference/S04_ref.png",
+      "candidate_image": "candidate/S04_candidate.png",
+      "claim_source_id": "S04",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_05",
+      "source_id": "S05",
+      "reference_image": "reference/S05_ref.png",
+      "candidate_image": "candidate/S05_candidate.png",
+      "claim_source_id": "S05",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_06",
+      "source_id": "S06",
+      "reference_image": "reference/S06_ref.png",
+      "candidate_image": "candidate/S06_candidate.png",
+      "claim_source_id": "S06",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_07",
+      "source_id": "S07",
+      "reference_image": "reference/S07_ref.png",
+      "candidate_image": "candidate/S07_candidate.png",
+      "claim_source_id": "S07",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_08",
+      "source_id": "S08",
+      "reference_image": "reference/S08_ref.png",
+      "candidate_image": "candidate/S08_candidate.png",
+      "claim_source_id": "S08",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_09",
+      "source_id": "S09",
+      "reference_image": "reference/S09_ref.png",
+      "candidate_image": "candidate/S09_candidate.png",
+      "claim_source_id": "S09",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_10",
+      "source_id": "S10",
+      "reference_image": "reference/S10_ref.png",
+      "candidate_image": "candidate/S10_candidate.png",
+      "claim_source_id": "S10",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_11",
+      "source_id": "S11",
+      "reference_image": "reference/S11_ref.png",
+      "candidate_image": "candidate/S11_candidate.png",
+      "claim_source_id": "S11",
+      "expected_decision": "accept"
+    },
+    {
+      "sample_id": "demo_12",
+      "source_id": "S12",
+      "reference_image": "reference/S12_ref.png",
+      "candidate_image": "candidate/S12_candidate.png",
+      "claim_source_id": "S12",
+      "expected_decision": "reject"
+    },
+    {
+      "sample_id": "demo_13",
+      "source_id": "S13",
+      "reference_image": "reference/S13_ref.png",
+      "candidate_image": "candidate/S13_candidate.png",
+      "claim_source_id": "S13",
+      "expected_decision": "reject"
+    },
+    {
+      "sample_id": "demo_14",
+      "source_id": "S14",
+      "reference_image": "reference/S14_ref.png",
+      "candidate_image": "candidate/S14_candidate.png",
+      "claim_source_id": "S14",
+      "expected_decision": "reject"
+    },
+    {
+      "sample_id": "demo_15",
+      "source_id": "S15",
+      "reference_image": "reference/S15_ref.png",
+      "candidate_image": "candidate/S15_candidate.png",
+      "claim_source_id": "S15",
+      "expected_decision": "reject"
+    }
+  ]
+}
