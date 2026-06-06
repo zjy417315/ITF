@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local outputs
+outputs/
+runs/
+logs/
+*.log
+*.tmp
+
+# Large data and models
+DATA/dataset/raw/
+DATA/dataset/rgb_web_jpg/
+DATA/checkpoints/
+DATA/caches_optional/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.dng
+*.cr2
+*.nef
+
+# Compact synthetic demo artifacts are intentionally small and committed.
+!compact_demo/tiny_checkpoint.pt
+!compact_demo/tiny_source_payloads.npz
+compact_demo/outputs/
+
+# Build products
+build/
+dist/
+*.spec
+
+# OS and IDE
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
